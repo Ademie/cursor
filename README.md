@@ -32,6 +32,35 @@ cursor rules
 	28.  Maintain UI consistencies, always use themes to manage ui stylings, fonts, colors, etc
 	29.   Always Use flutter_screen_util package for responsiveness and adaptability.
          30.    Always debug errors 
-
+{
+  "rules": [
+    "Use meaningful and descriptive variable, class, and method names",
+    "Split large widgets into smaller, reusable components",
+	"use gorouter to manage routes, and never use the redirect feature, instead use if statements or ternary operations to manage redirections"
+    "Use const constructors where possible for better performance",
+    "Avoid deeply nested widget trees – extract UI into separate widgets",
+    "Separate UI, state, business logic, and data layers (Clean Architecture)",
+    "Do not perform async logic in the build() method",
+    "Use state management (Provider, Riverpod, Bloc) instead of setState for complex flows",
+    "Centralize app-wide constants, strings, themes, and colors",
+    "Dispose of all controllers, streams, and subscriptions properly",
+    "Avoid global variables – use scoped state or dependency injection (get_it)",
+    "Avoid magic numbers and strings – define constants or enums",
+    "Use immutable data models where possible",
+    "Write unit, widget, and integration tests with proper coverage",
+    "Enforce code formatting with flutter format or a formatter plugin",
+    "Avoid side effects in pure widgets – push logic to view models/services",
+    "Use typed routing or navigation wrappers to avoid hardcoded strings",
+    "Catch and log errors with detailed messages – don’t silently fail",
+    "Minimize rebuilds using keys, consts, and granular widget trees",
+    "Respect the Single Responsibility Principle in classes and files",
+    "Inject services and dependencies for easier testing and mocking",
+    "Use Dart lint rules and static analysis to catch anti-patterns early",
+    "Never block the main isolate – move heavy work to compute() or isolate",
+    "Secure APIs and auth tokens – never hardcode keys or secrets",
+    "Avoid tight coupling between modules – keep layers swappable",
+    "Keep all APIs modular and well-documented for team integration"
+  ]
+}
 
 Remember I’m building as a senior software mobile engineer with 15 years experience and my code needs to be top notched, performance, reliability, scalability, modularity, quality, security and ease of integration with other developers are very important
